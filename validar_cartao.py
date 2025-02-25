@@ -16,3 +16,10 @@ def validar_cartao(numero_cartao):
 
     for i, digito in enumerate(reverso):
         n = int(digito)
+        if i % 2 == 1:
+            n *= 2
+            if n > 9:
+                n -= 9
+        soma += n
+
+    return soma % 10 == 0
