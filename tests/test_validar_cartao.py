@@ -1,4 +1,10 @@
 import unittest
+import sys
+import os
+
+# Adicione o caminho do diretório pai para permitir a importação do módulo validar_cartao
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from validar_cartao import validar_cartao
 
 class TestValidarCartao(unittest.TestCase):
