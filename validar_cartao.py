@@ -23,3 +23,7 @@ def validar_cartao(numero_cartao):
         soma += n
 
     return soma % 10 == 0
+
+if __name__ == "__main__":
+    numero_cartao = "4539 1488 0343 6467"
+    print(validar_cartao(numero_cartao))  # Output: True ou False dependendo do número
