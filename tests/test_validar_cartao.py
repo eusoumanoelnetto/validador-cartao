@@ -1,9 +1,5 @@
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from validar_cartao import validar_cartao
-
 import unittest
+from validar_cartao import validar_cartao
 
 class TestValidarCartao(unittest.TestCase):
 
